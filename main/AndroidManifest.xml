@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sridhama.com.locationmate">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LocationViewActivity"
+            android:label="View Location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddFriendActivity"
+            android:label="@string/title_activity_add_friend"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".LMService" />
+
+        <activity
+            android:name=".BSSIDActivity"
+            android:label="Add Location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewFriendsActivity"
+            android:label="@string/title_activity_view_friends"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NoWifiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ToSActivity"
+            android:label="LocationMate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewLocationsActivity"
+            android:label="Friends by Location"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ViewFriendsatLocationActivity"
+            android:label="Friends at Location"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

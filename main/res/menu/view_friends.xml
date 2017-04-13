@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/locationview"
+        android:orderInCategory="103"
+        android:title="Friends by Location"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_pin_drop_"/>
+
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="103"
+        android:title="Refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_sync"/>
+
+
+
+
+    <item
+        android:id="@+id/contribute"
+        android:orderInCategory="103"
+        android:title="Add Location"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="103"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="103"
+        android:title="Help"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="103"
+        android:title="Log out"
+        app:showAsAction="never" />
+
+
+</menu>
